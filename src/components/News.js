@@ -12,7 +12,9 @@ const News = (props) => {
 
     // Ensure 'page' is used correctly in the dependency array or in updateNews
     // A better approach is to use the state variable 'page' directly from the component scope
-    const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=277f86f26bd14ebd88e37d259402d801&page=${page}&pageSize=${props.pageSize}`;
+    const url = `https://api.allorigins.win/raw?url=${encodeURIComponent(
+  `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${process.env.REACT_APP_NEWS_API}&page=${page}&pageSize=${props.pageSize}`
+)}`;
 
     setLoading(true);
     const data = await fetch(url);
