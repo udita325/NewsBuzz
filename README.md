@@ -2,6 +2,8 @@
 
 A modern React-based news application that delivers real-time top headlines across various categories like Entertainment, Sports, Technology, Business, and more.
 
+🌟 Live Demo-
+
 🚀 Features
 
 🔍 Browse latest top headlines
